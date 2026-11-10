@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arjun &amp; Priya — Wedding Invitation</title>
+<meta name="description" content="You are invited to celebrate the wedding of Arjun &amp; Priya — September 12, 2027, Coimbatore, Tamil Nadu.">
+<meta name="theme-color" content="#171d38">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171d38'/%3E%3Cpath d='M32 9c2 13 10 21 23 23-13 2-21 10-23 23-2-13-10-21-23-23 13-2 21-10 23-23z' fill='%23c9a45c'/%3E%3C/svg%3E">
+<!-- Link previews (WhatsApp, iMessage…) need ABSOLUTE urls. After hosting, replace YOUR-DOMAIN with your real domain. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Arjun &amp; Priya — Wedding Invitation">
+<meta property="og:description" content="September 12, 2027 · Coimbatore, Tamil Nadu. Kindly join us.">
+<meta property="og:image" content="img/couple.jpg">
+<meta property="og:url" content="/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/f4.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/f1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css?v=27">
+<script>document.documentElement.className='js'</script>
+</head>
+<body class="lock">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="orn" viewBox="0 0 200 14"><g fill="none" stroke="#c9a45c" stroke-width=".8" stroke-linecap="round"><path d="M0 7H76M124 7H200"/><path d="M82 7c4-5 9-5 13 0c3 3 7 3 5-1M118 7c-4-5-9-5-13 0c-3 3-7 3-5-1"/><path d="M100 1.5l3.2 5.5-3.2 5.5-3.2-5.5z" fill="#c9a45c"/><circle cx="74" cy="7" r="1.2" fill="#c9a45c"/><circle cx="126" cy="7" r="1.2" fill="#c9a45c"/></g></symbol></svg>
+
+<!-- ============ LOADER / ENTRY (tap = starts the music) ============ -->
+<div id="loader">
+  <div class="ld-frame" aria-hidden="true"><i></i><b class="c1"></b><b class="c2"></b><b class="c3"></b><b class="c4"></b></div>
+  <div class="ld-sparks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <p class="pre">Together with their families</p>
+  <div class="ld-emblem">
+    <svg viewBox="0 0 200 200" aria-hidden="true"><circle class="r1" cx="100" cy="100" r="96"/><circle class="r2" cx="100" cy="100" r="88"/><g class="orb"><path d="M100 1.5l2.6 4.4-2.6 4.4-2.6-4.4z" fill="#e6c87f"/></g></svg>
+    <div class="mono gold">A &amp; P</div>
+  </div>
+  <p class="sub">ARJUN &amp; PRIYA</p>
+  <svg class="orn ld-orn" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+  <p class="when">September 12, 2027 &middot; Coimbatore</p>
+  <div class="bar"><i></i></div>
+  <button class="btn" id="open" type="button" hidden>Open Invitation</button>
+</div>
+
+<!-- ============ MUSIC TOGGLE ============ -->
+<button id="music" type="button" aria-label="Toggle music" aria-pressed="false" hidden><i></i><i></i><i></i><i></i></button>
+
+<main>
+<!-- 1 · HERO -->
+<div class="wc">
+<section class="snap hero" id="top">
+  <div class="deco" aria-hidden="true"><i class="glow"></i><canvas class="dust"></canvas></div>
+  <div class="couple fd" role="img" aria-label="Arjun and Priya"></div>
+  <div class="title">
+    <h1 class="names gold fd" style="--d:.3s"><span>Arjun</span> <span class="amp">&amp;</span> <span>Priya</span></h1>
+    <p class="meta fd" style="--d:.8s">SEPTEMBER 12, 2027<br>COIMBATORE, TAMIL NADU</p>
+  </div>
+  <div class="hint" aria-hidden="true">Scroll to discover our story<i></i></div>
+</section>
+</div>
+
+<!-- 1b · A ROYAL UNION (Interactive Scratch / Swipe Cards) -->
+<section class="snap royal-reveal" id="reveal">
+  <div class="deco" aria-hidden="true"><i class="frame"></i><i class="glow"></i><canvas class="dust"></canvas></div>
+  <svg class="orn rv" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+  <p class="tagline rv">CHAPTER I &middot; A ROYAL UNION</p>
+  <h2 class="rv">The Royal Reveal</h2>
+  <p class="reveal-hint rv">Swipe or scratch the golden veil to reveal the couple</p>
+
+  <div class="cards-duo rv">
+    <!-- Groom Card: King of Hearts -->
+    <div class="royal-card groom-card" data-revealed="false">
+      <div class="card-back">
+        <span class="card-corner tl">K &hearts;</span>
+        <span class="card-corner br">K &hearts;</span>
+        <div class="card-photo" style="background-image: url('img/groom.jpg?v=3'); background-position: center 20%; background-size: cover;"></div>
+        <div class="card-info">
+          <p class="card-role"><span class="role-full">THE GROOM &middot; KING OF HEARTS</span><span class="role-short">THE GROOM</span></p>
+          <h3 class="card-name gold">Arjun</h3>
+        </div>
+      </div>
+      <canvas class="scratch-canvas"></canvas>
+      <div class="scratch-badge">✦ Scratch or Swipe ✦</div>
+    </div>
+
+    <!-- Bride Card: Queen of Hearts -->
+    <div class="royal-card bride-card" data-revealed="false">
+      <div class="card-back">
+        <span class="card-corner tl">Q &hearts;</span>
+        <span class="card-corner br">Q &hearts;</span>
+        <div class="card-photo" style="background-image: url('img/bride.jpg?v=3'); background-position: center 20%; background-size: cover;"></div>
+        <div class="card-info">
+          <p class="card-role"><span class="role-full">THE BRIDE &middot; QUEEN OF HEARTS</span><span class="role-short">THE BRIDE</span></p>
+          <h3 class="card-name gold">Priya</h3>
+        </div>
+      </div>
+      <canvas class="scratch-canvas"></canvas>
+      <div class="scratch-badge">✦ Scratch or Swipe ✦</div>
+    </div>
+  </div>
+
+  <div class="btns rv">
+    <button class="btn" id="btn-reveal-all" type="button">&#10024; Instant Reveal</button>
+  </div>
+  <svg class="orn rv" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+</section>
+
+<!-- 2 · STORY & FAMILIES -->
+<div class="wc story-wc">
+<section class="snap story" id="story">
+  <div class="deco" aria-hidden="true"><i class="frame"></i><i class="glow warm"></i><canvas class="dust dark"></canvas></div>
+  <svg class="orn rv" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+  <p class="tagline rv">WITH THE BLESSINGS OF OUR FAMILIES</p>
+  <h2 class="rv">Our Story &amp; Families</h2>
+  <svg class="orn rv" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+
+  <div class="family-duo rv">
+    <div class="fam-card">
+      <h3>Groom's Parents</h3>
+      <p>Mr. &amp; Mrs. R. Subramanian</p>
+      <small>Coimbatore, Tamil Nadu</small>
+    </div>
+    <div class="fam-card">
+      <h3>Bride's Parents</h3>
+      <p>Mr. &amp; Mrs. K. Venkatesh</p>
+      <small>Chennai, Tamil Nadu</small>
+    </div>
+  </div>
+
+  <div class="body rv" style="margin-top:clamp(10px,2svh,22px)">
+    <p>We met on a quiet evening at a friend’s wedding in Coimbatore and have been inseparable ever since. Blessed by our parents and cherished by our loved ones, we cannot wait to celebrate the beginning of our forever with you.</p>
+  </div>
+  <button class="btn rv" type="button" data-rsvp>RSVP</button>
+</section>
+</div>
+
+<!-- 3 · VENUE -->
+<section class="snap venue" id="wedding">
+  <div class="deco" aria-hidden="true">
+    <div class="lanterns">
+      <div class="lantern l1"><i class="chain"></i><i class="lamp"><i class="flame"></i></i></div>
+      <div class="lantern l2"><i class="chain"></i><i class="lamp"><i class="flame"></i></i></div>
+      <div class="lantern l3"><i class="chain"></i><i class="lamp"><i class="flame"></i></i></div>
+    </div>
+    <i class="frame"></i><i class="sk sk-l big"></i><i class="sk sk-r big"></i><canvas class="dust"></canvas>
+  </div>
+  <svg class="orn rv" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+  <p class="tagline rv">THE WEDDING DESTINATION</p>
+  <h2 class="rv">Grand Pavilion</h2>
+  <p class="dest-sub rv">Join us at a place close to our hearts</p>
+  <svg class="orn rv" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+  <p class="body rv">The ceremony will take place at the Grand Pavilion on Race Course Road, followed by an evening feast and dancing under the stars.</p>
+  <p class="place rv">Race Course Road &middot; Coimbatore, Tamil Nadu</p>
+  <div class="btns rv">
+    <a class="btn dest-btn" data-map href="#" target="_blank" rel="noopener">&#129517; GET DIRECTIONS &nearr;</a>
+    <button class="btn ghost" type="button" data-rsvp>RSVP Online</button>
+  </div>
+</section>
+
+<!-- 4 · DETAILS -->
+<section class="snap info" id="info">
+  <div class="deco" aria-hidden="true"><i class="stars"></i><i class="moon"></i><i class="frame"></i><i class="sk sk-r faint"></i><i class="sea short"></i><canvas class="dust"></canvas></div>
+  <h2 class="rv">The Details</h2>
+  <svg class="orn rv" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+  <div class="cards">
+    <div class="card rv"><h3>Date</h3><p>Sunday<br>September 12, 2027</p></div>
+    <div class="card rv" style="--d:.12s"><h3>Ceremony</h3><p>4:00 PM<br>Guests seated by 3:45 PM</p></div>
+    <div class="card rv" style="--d:.24s"><h3>Reception</h3><p>Welcome Drinks · 5:00 PM<br>Dinner · 7:00 PM</p></div>
+    <div class="card rv" style="--d:.1s"><h3>Venue</h3><p>Grand Pavilion<br>Race Course Road, Coimbatore</p></div>
+    <div class="card rv" style="--d:.22s">
+      <h3>Dress Palette</h3>
+      <p>Silks &amp; soft pastels</p>
+      <div class="swatches">
+        <div class="sw"><i style="background:#d4af37"></i><span>Gold</span></div>
+        <div class="sw"><i style="background:#f5e6c8"></i><span>Champagne</span></div>
+        <div class="sw"><i style="background:#d8a29a"></i><span>Blush</span></div>
+        <div class="sw"><i style="background:#9bb094"></i><span>Sage</span></div>
+        <div class="sw"><i style="background:#7d9bb8"></i><span>Dusty Blue</span></div>
+      </div>
+    </div>
+    <div class="card rv" style="--d:.26s">
+      <h3>Getting There</h3>
+      <p><strong>Airport:</strong> Coimbatore (CJB) &middot; 9 km<br>
+      <strong>Train:</strong> Coimbatore Jn (CBE) &middot; 2 km<br>
+      Race Course Road, Central Coimbatore</p>
+    </div>
+  </div>
+  <div class="btns rv">
+    <a class="btn ghost" data-map href="#" target="_blank" rel="noopener">View on map</a>
+    <button class="btn" type="button" id="cal">Add to calendar</button>
+    <a class="btn ghost" id="gcal" href="#" target="_blank" rel="noopener">Google Calendar</a>
+  </div>
+</section>
+
+<!-- 5 · ITINERARY -->
+<section class="snap sched" id="schedule">
+  <div class="deco" aria-hidden="true"><i class="wash"></i><i class="frame"></i><i class="sk sk-l faint"></i><i class="sk sk-r faint"></i><canvas class="dust dark"></canvas></div>
+  <svg class="orn rv" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+  <p class="tagline rv">CELEBRATION ITINERARY</p>
+  <h2 class="rv">Schedule of Events</h2>
+  <svg class="orn rv" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+
+  <div class="timeline-container rv">
+    <div class="timeline-track">
+      <div class="timeline-line"></div>
+      <div class="timeline-rose" id="timeline-rose" aria-hidden="true">
+        <span class="rose-flower">&#127800;</span>
+      </div>
+    </div>
+    <div class="timeline-events" id="timeline-events">
+      <div class="t-event active" data-idx="0">
+        <div class="t-time">4:00 PM</div>
+        <div class="t-node"><div class="t-icon">&#128330;</div></div>
+        <div class="t-info">
+          <h3>Sacred Ceremony</h3>
+          <p>Muhurtham &middot; Exchange of vows &amp; sacred blessings</p>
+        </div>
+      </div>
+      <div class="t-event" data-idx="1">
+        <div class="t-time">5:00 PM</div>
+        <div class="t-node"><div class="t-icon">&#129346;</div></div>
+        <div class="t-info">
+          <h3>Welcome Drinks</h3>
+          <p>Cocktails, toasts &amp; joyful photographs</p>
+        </div>
+      </div>
+      <div class="t-event" data-idx="2">
+        <div class="t-time">7:00 PM</div>
+        <div class="t-node"><div class="t-icon">&#127869;</div></div>
+        <div class="t-info">
+          <h3>Royal Feast &amp; Dinner</h3>
+          <p>Traditional banquet &amp; celebration under the pavilion</p>
+        </div>
+      </div>
+      <div class="t-event" data-idx="3">
+        <div class="t-time">9:00 PM</div>
+        <div class="t-node"><div class="t-icon">&#127926;</div></div>
+        <div class="t-info">
+          <h3>Music &amp; Celebration</h3>
+          <p>Dancing, music &amp; festivities with loved ones</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5b · GALLERY -->
+<section class="snap gallery" id="gallery" hidden>
+  <div class="deco" aria-hidden="true"><i class="frame"></i><canvas class="dust dark"></canvas></div>
+  <svg class="orn rv" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+  <p class="tagline rv">CHERISHED MEMORIES</p>
+  <h2 class="rv">Our Moments</h2>
+  <svg class="orn rv" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+  <p class="gal-hint rv">Tap any photo to view full screen</p>
+  <div class="gal" id="gal"></div>
+</section>
+
+<!-- 6 · CLOSING -->
+<section class="snap end" id="end">
+  <div class="deco" aria-hidden="true"><i class="stars"></i><i class="sun low"></i><i class="frame"></i><i class="sk sk-l"></i><i class="sk sk-r"></i><i class="sea"></i><canvas class="dust"></canvas></div>
+  <svg class="star" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2C21.6 12 28 18.4 38 20C28 21.6 21.6 28 20 38C18.4 28 12 21.6 2 20C12 18.4 18.4 12 20 2Z" fill="#c9a45c"/></svg>
+  <p class="tagline rv">THE WEDDING CELEBRATION</p>
+  <h2 class="rv">A Beautiful Beginning</h2>
+  <p class="quote rv" style="--d:.2s">&ldquo;Two hearts, one shared journey, and a lifetime to look forward to.&rdquo;</p>
+  <div class="date-badge rv" style="--d:.25s">&#10022; 12 SEPTEMBER 2027 &#10022;</div>
+  <div class="mono gold rv" style="--d:.3s">A &amp; P</div>
+  <div class="count rv" id="count" style="--d:.35s" aria-live="off">
+    <div class="cd-badge"><b id="cd-d">0</b><span>Days</span></div>
+    <div class="cd-badge"><b id="cd-h">0</b><span>Hours</span></div>
+    <div class="cd-badge"><b id="cd-m">0</b><span>Min</span></div>
+    <div class="cd-badge"><b id="cd-s">0</b><span>Sec</span></div>
+  </div>
+  <p class="gift rv" style="--d:.4s">Your presence is the greatest gift. Should you wish to give something more, a contribution toward our honeymoon would be warmly appreciated.</p>
+  <div class="btns rv" style="--d:.45s"><button class="btn wax-cta-btn" type="button" data-rsvp><span class="wax-dot"></span>&#128140; Kindly Respond (RSVP)</button></div>
+</section>
+</main>
+
+<!-- ============ RSVP DIALOG WITH ROYAL WAX SEAL ============ -->
+<div id="rsvp" role="dialog" aria-modal="true" aria-labelledby="rsvp-t" hidden>
+  <div class="rsvp-envelope" id="rsvp-envelope">
+    <button class="x" type="button" id="rsvp-x" aria-label="Close">&times;</button>
+    
+    <!-- Outer Wax Seal Flap (Visible before unsealing) -->
+    <div class="envelope-outer" id="env-outer">
+      <div class="env-head">
+        <p class="tagline">JOIN US IN CELEBRATION</p>
+        <h3 id="rsvp-t">Kindly Respond</h3>
+        <p class="env-quote">&ldquo;Your presence would make our celebration even more special.&rdquo;</p>
+      </div>
+      <div class="wax-seal-wrapper" id="wax-seal-btn" role="button" tabindex="0" aria-label="Open invitation letter">
+        <div class="wax-seal">
+          <div class="wax-inner">
+            <span class="wax-crown">&#10022;</span>
+            <span class="wax-txt">RSVP</span>
+            <span class="wax-flourish">&#10043;</span>
+          </div>
+        </div>
+        <div class="wax-ribbon l"></div>
+        <div class="wax-ribbon r"></div>
+        <div class="wax-prompt"><span>✦ Tap to Open Invitation ✦</span></div>
+      </div>
+    </div>
+
+    <!-- Inner Response Card (Slides up when unsealed) -->
+    <form class="sheet" id="rsvp-form" autocomplete="off">
+      <div class="card-header">
+        <p class="tagline">&mdash; R &middot; S &middot; V &middot; P &mdash;</p>
+        <h3>Celebrate With Us</h3>
+        <svg class="orn" viewBox="0 0 200 14" aria-hidden="true"><use href="#orn"/></svg>
+      </div>
+
+      <label class="input-group">
+        <span class="lbl-txt">YOUR FULL NAME *</span>
+        <div class="input-wrap">
+          <span class="input-icon">&#128100;</span>
+          <input name="name" required maxlength="80" placeholder="Enter your full name">
+        </div>
+      </label>
+
+      <div class="field-att">
+        <span class="lbl-txt">WILL YOU BE ATTENDING? *</span>
+        <div class="att-tiles">
+          <label class="att-tile active" id="tile-yes">
+            <input type="radio" name="att" value="yes" checked>
+            <div class="att-content">
+              <span class="att-check">&#10003;</span>
+              <strong>JOYFULLY ACCEPT</strong>
+              <small>Will attend with joy</small>
+            </div>
+          </label>
+          <label class="att-tile" id="tile-no">
+            <input type="radio" name="att" value="no">
+            <div class="att-content">
+              <span class="att-check">&times;</span>
+              <strong>REGRETFULLY DECLINE</strong>
+              <small>Sending love from afar</small>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <div id="rsvp-guest-section">
+        <div class="stepper-group">
+          <span class="lbl-txt">NUMBER OF GUESTS ATTENDING *</span>
+          <div class="guest-stepper">
+            <button type="button" class="step-btn" id="guest-dec" aria-label="Decrease guests">&minus;</button>
+            <div class="guest-display"><b id="guest-num">1</b> <span id="guest-unit">Person</span></div>
+            <button type="button" class="step-btn" id="guest-inc" aria-label="Increase guests">&plus;</button>
+          </div>
+          <input type="hidden" name="guests" id="guests-val" value="1">
+        </div>
+
+        <div class="events-check" id="events-group">
+          <span class="lbl-txt">WHICH CELEBRATIONS WILL YOU ATTEND?</span>
+          <label class="check-pill">
+            <input type="checkbox" name="ev_ceremony" checked>
+            <span><strong>Ceremony (Muhurtham)</strong><small>4:00 PM &middot; Sacred traditional vows</small></span>
+          </label>
+          <label class="check-pill">
+            <input type="checkbox" name="ev_reception" checked>
+            <span><strong>Reception &amp; Dinner</strong><small>7:00 PM &middot; Drinks, feast &amp; music</small></span>
+          </label>
+        </div>
+      </div>
+
+      <label class="input-group">
+        <span class="lbl-txt">MESSAGE FOR THE COUPLE <small>(OPTIONAL)</small></span>
+        <div class="input-wrap text-wrap">
+          <span class="input-icon">&#9825;</span>
+          <textarea name="msg" rows="2" maxlength="300" placeholder="Write a sweet message, blessing or dietary needs…"></textarea>
+        </div>
+      </label>
+
+      <div class="send">
+        <button class="btn send-btn" type="submit" id="send-wa" hidden>&#10024; Confirm My Response (WhatsApp)</button>
+        <button class="btn send-btn" type="submit" id="send-em" hidden>&#10024; Confirm My Response (Email)</button>
+        <button class="btn send-btn" type="submit" id="send-cp" hidden>&#10024; Confirm &amp; Copy Reply</button>
+      </div>
+      <p class="note" id="rsvp-note" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview" hidden>
+  <button class="x" type="button" id="lb-x" aria-label="Close">&times;</button>
+  <div class="lb-content">
+    <img id="lb-img" src="" alt="Enlarged photo">
+  </div>
+</div>
+
+<script>
+/* ================= EDIT THESE ================= */
+var CONFIG={
+  whatsapp:'919876543210',  // digits with country code (e.g. 919876543210) — replace with couple's WhatsApp number
+  email:'arjun.priya.wedding@gmail.com',  // couple's RSVP email
+  venue:'Grand Pavilion, Race Course Road, Coimbatore, Tamil Nadu',
+  mapQuery:'Grand Pavilion, Race Course Road, Coimbatore, Tamil Nadu',
+  title:'Arjun & Priya’s Wedding Celebration',
+  start:'20270912T160000',          // local time at the venue
+  end:'20270912T233000'
+};
+/* ============================================== */
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
+  var mapUrl='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(CONFIG.mapQuery);
+  $$('[data-map]').forEach(function(a){a.href=mapUrl});
+  $('#gcal').href='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(CONFIG.title)+'&dates='+CONFIG.start+'/'+CONFIG.end+'&ctz=Asia/Kolkata&location='+encodeURIComponent(CONFIG.venue)+'&details='+encodeURIComponent('Ceremony 4:00 PM · Welcome Drinks 5:00 PM · Dinner 7:00 PM · Music & Dance 9:00 PM');
+
+  /* ---------- add to calendar (.ics) ---------- */
+  function esc(s){return s.replace(/[\\,;]/g,'\\$&')}
+  $('#cal').addEventListener('click',function(){
+    var ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Wedding Invitation//EN','BEGIN:VEVENT','UID:arjun-priya-'+CONFIG.start+'@invitation','DTSTAMP:20260101T000000Z','DTSTART:'+CONFIG.start,'DTEND:'+CONFIG.end,'SUMMARY:'+esc(CONFIG.title),'LOCATION:'+esc(CONFIG.venue),'DESCRIPTION:'+esc('Ceremony 4:00 PM. Welcome Drinks 5:00 PM. Dinner 7:00 PM. Music & Dance 9:00 PM.'),'BEGIN:VALARM','TRIGGER:-P1D','ACTION:DISPLAY','DESCRIPTION:Wedding tomorrow','END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
+    var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));a.download='arjun-priya-wedding.ics';document.body.appendChild(a);a.click();a.remove();
+  });
+
+  /* ---------- RSVP dialog with Royal Wax-Sealed Envelope ---------- */
+  var dlg=$('#rsvp'),form=$('#rsvp-form'),note=$('#rsvp-note'),lastBtn=null;
+  var guestSec=$('#rsvp-guest-section'),guestsVal=$('#guests-val');
+  var guestNumEl=$('#guest-num'), guestUnitEl=$('#guest-unit');
+  var envOuter=$('#env-outer'), waxSealBtn=$('#wax-seal-btn'), envContainer=$('#rsvp-envelope');
+  var hasWa=/\d{6,}/.test(CONFIG.whatsapp),hasEm=/.+@.+/.test(CONFIG.email);
+  $('#send-wa').hidden=!hasWa;$('#send-em').hidden=!hasEm;$('#send-cp').hidden=hasWa||hasEm;
+
+  // Unseal envelope animation
+  function unsealEnvelope(){
+    if(!envContainer) return;
+    envContainer.classList.add('unsealed');
+    if(form.elements["name"]) setTimeout(function(){form.elements["name"].focus()}, 400);
+  }
+
+  if(waxSealBtn) waxSealBtn.addEventListener('click', unsealEnvelope);
+
+  function openRsvp(){
+    lastBtn=document.activeElement;
+    dlg.hidden=false;
+    document.documentElement.classList.add('modal');
+    // If opening from an RSVP button on the page, unseal with animation
+    setTimeout(unsealEnvelope, 200);
+  }
+
+  function closeRsvp(){
+    dlg.hidden=true;
+    document.documentElement.classList.remove('modal');
+    if(envContainer) envContainer.classList.remove('unsealed');
+    if(lastBtn) lastBtn.focus();
+  }
+
+  $$('[data-rsvp]').forEach(function(b){b.addEventListener('click',openRsvp)});
+  $('#rsvp-x').addEventListener('click',closeRsvp);
+  dlg.addEventListener('click',function(e){if(e.target===dlg)closeRsvp()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!dlg.hidden)closeRsvp()});
+
+  // Accept / Decline Tiles
+  var tileYes=$('#tile-yes'), tileNo=$('#tile-no');
+  function setAttendance(attYes){
+    if(attYes){
+      if(tileYes) tileYes.classList.add('active');
+      if(tileNo) tileNo.classList.remove('active');
+      form.att.value='yes';
+      if(guestSec) guestSec.style.display='';
+    } else {
+      if(tileYes) tileYes.classList.remove('active');
+      if(tileNo) tileNo.classList.add('active');
+      form.att.value='no';
+      if(guestSec) guestSec.style.display='none';
+    }
+  }
+  if(tileYes) tileYes.addEventListener('click',function(){setAttendance(true)});
+  if(tileNo) tileNo.addEventListener('click',function(){setAttendance(false)});
+
+  // Guest Stepper [-] [ + ]
+  var currGuests=1;
+  function updateGuestDisplay(){
+    if(guestNumEl) guestNumEl.textContent=currGuests;
+    if(guestUnitEl) guestUnitEl.textContent=currGuests===1?'Person':'People';
+    if(guestsVal) guestsVal.value=currGuests;
+  }
+  var decBtn=$('#guest-dec'), incBtn=$('#guest-inc');
+  if(decBtn) decBtn.addEventListener('click',function(){if(currGuests>1){currGuests--;updateGuestDisplay()}});
+  if(incBtn) incBtn.addEventListener('click',function(){if(currGuests<10){currGuests++;updateGuestDisplay()}});
+
+  var how='';
+  $$('.send .btn',form).forEach(function(b){b.addEventListener('click',function(){how=b.id})});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!how) how = hasWa ? 'send-wa' : (hasEm ? 'send-em' : 'send-cp');
+    var yes=form.att.value==='yes',n=form.elements["name"].value.trim(),g=currGuests||1,m=form.msg.value.trim();
+    
+    var events=[];
+    if(form.ev_ceremony&&form.ev_ceremony.checked) events.push('Ceremony');
+    if(form.ev_reception&&form.ev_reception.checked) events.push('Reception & Dinner');
+    var evStr=events.length?' ('+events.join(' & ')+')':'';
+
+    var text='Hello! This is '+n+'. '+(yes?'I will happily attend the wedding of Arjun & Priya on 12 September 2027 ('+g+' guest'+(g>1?'s':'')+evStr+').':'Unfortunately I cannot attend the wedding of Arjun & Priya on 12 September 2027.')+(m?'\n\nMessage: '+m:'');
+    var greeting='✨ See you there, '+n+'! ✨\n';
+
+    if(how==='send-wa'){
+      window.open('https://wa.me/'+CONFIG.whatsapp.replace(/\D/g,'')+'?text='+encodeURIComponent(text),'_blank');
+      note.textContent=greeting+'Opening WhatsApp — press send there to finish. Thank you!';
+    }
+    else if(how==='send-em'){
+      location.href='mailto:'+CONFIG.email+'?subject='+encodeURIComponent('RSVP — '+n)+'&body='+encodeURIComponent(text);
+      note.textContent=greeting+'Opening your email app — press send to finish. Thank you!';
+    }
+    else{
+      (navigator.clipboard?navigator.clipboard.writeText(text):Promise.reject()).then(function(){
+        note.textContent=greeting+'Reply copied — please paste it to the couple. Thank you!';
+      },function(){note.textContent=text});
+    }
+  });
+
+  /* ---------- interactive scratch cards (King & Queen) ---------- */
+  var scratchCards=[];
+  function setupScratchCard(card){
+    var canvas=card.querySelector('.scratch-canvas');
+    if(!canvas)return null;
+    var ctx=canvas.getContext('2d');
+    var badge=card.querySelector('.scratch-badge');
+    var cleared=false,down=false,checks=0;
+
+    function resize(){
+      var rect=card.getBoundingClientRect();
+      var dpr=window.devicePixelRatio||1;
+      var w=rect.width||260, h=rect.height||360;
+      canvas.width=w*dpr; canvas.height=h*dpr;
+      ctx.scale(dpr,dpr);
+
+      // Gold shimmer foil gradient
+      var g=ctx.createLinearGradient(0,0,w,h);
+      g.addColorStop(0,'#c49b4f');
+      g.addColorStop(.25,'#f7e2a6');
+      g.addColorStop(.5,'#cb9e47');
+      g.addColorStop(.75,'#ebd08e');
+      g.addColorStop(1,'#a87d32');
+      ctx.fillStyle=g;
+      ctx.fillRect(0,0,w,h);
+
+      // Inner double border
+      ctx.strokeStyle='rgba(255,255,255,.55)';
+      ctx.lineWidth=1.5;
+      ctx.strokeRect(6,6,w-12,h-12);
+      ctx.strokeStyle='#7a5718';
+      ctx.lineWidth=1;
+      ctx.strokeRect(9,9,w-18,h-18);
+
+      // Center veil motif (scaled for desktop & phone view)
+      var sm=w<200;
+      ctx.fillStyle='#5c3d0f';
+      ctx.font='bold '+(sm?'10px':'12px')+' "Cormorant Garamond", Georgia, serif';
+      ctx.textAlign='center';
+      ctx.fillText(sm?'✦ ROYAL FOIL ✦':'✦ ROYAL FOIL VEIL ✦',w/2,h/2-(sm?18:24));
+      ctx.font=(sm?'18px':'22px')+' serif';
+      ctx.fillText('👑',w/2,h/2+(sm?4:8));
+      ctx.font='italic '+(sm?'10px':'12px')+' "EB Garamond", Georgia, serif';
+      ctx.fillText(sm?'Scratch or tap':'Swipe or scratch to reveal',w/2,h/2+(sm?24:34));
+    }
+
+    function pos(e){
+      var r=canvas.getBoundingClientRect();
+      var cx=e.clientX||(e.touches&&e.touches[0]?e.touches[0].clientX:0);
+      var cy=e.clientY||(e.touches&&e.touches[0]?e.touches[0].clientY:0);
+      return {x:cx-r.left,y:cy-r.top};
+    }
+
+    function scratch(p){
+      if(cleared)return;
+      var w=canvas.width/(window.devicePixelRatio||1);
+      var rad=w<200?18:26;
+      ctx.globalCompositeOperation='destination-out';
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,rad,0,6.283);
+      ctx.fill();
+      if(badge&&!badge.classList.contains('gone'))badge.classList.add('gone');
+      if(++checks%8===0)verify();
+    }
+
+    function verify(){
+      if(cleared)return;
+      var d=ctx.getImageData(0,0,canvas.width,canvas.height).data;
+      var c=0,tot=d.length/4;
+      for(var i=3;i<d.length;i+=40){if(d[i]===0)c++}
+      var w=canvas.width/(window.devicePixelRatio||1);
+      var thresh=w<200?.20:.30;
+      if(c/(tot/10)>thresh)reveal();
+    }
+
+    function reveal(){
+      if(cleared)return;
+      cleared=true;
+      canvas.classList.add('cleared');
+      if(badge)badge.classList.add('gone');
+      card.setAttribute('data-revealed','true');
+    }
+
+    canvas.addEventListener('pointerdown',function(e){down=true;scratch(pos(e))});
+    window.addEventListener('pointermove',function(e){if(down)scratch(pos(e))});
+    window.addEventListener('pointerup',function(){down=false;if(!cleared)verify()});
+    canvas.addEventListener('click',function(e){if(!cleared)scratch(pos(e))});
+
+    resize();
+    window.addEventListener('resize',resize);
+    return {reveal:reveal};
+  }
+
+  $$('.royal-card').forEach(function(card){
+    var sc=setupScratchCard(card);
+    if(sc)scratchCards.push(sc);
+
+    var glare=document.createElement('div');
+    glare.className='card-glare';
+    card.appendChild(glare);
+
+    card.addEventListener('pointermove',function(e){
+      if(e.pointerType==='touch')return;
+      var r=card.getBoundingClientRect();
+      var x=e.clientX-r.left, y=e.clientY-r.top;
+      var px=(x/r.width-0.5)*2, py=(y/r.height-0.5)*2;
+      card.style.transform='perspective(1000px) rotateY('+(px*10)+'deg) rotateX('+(-py*10)+'deg) translateY(-4px)';
+      card.style.setProperty('--gx',(x/r.width*100)+'%');
+      card.style.setProperty('--gy',(y/r.height*100)+'%');
+      glare.style.opacity='1';
+    });
+    card.addEventListener('pointerleave',function(){
+      card.style.transform='perspective(1000px) rotateY(0deg) rotateX(0deg) translateY(0px)';
+      glare.style.opacity='0';
+    });
+  });
+
+  var revBtn=$('#btn-reveal-all');
+  if(revBtn){
+    revBtn.addEventListener('click',function(){
+      scratchCards.forEach(function(sc){sc.reveal()});
+      revBtn.textContent='✨ Revealed ✨';
+      revBtn.style.pointerEvents='none';
+    });
+  }
+
+  /* ---------- background music ----------
+     Drop your own file at audio/song.mp3 to use it. Otherwise a soft piano-style
+     arrangement of Pachelbel's Canon in D (public domain) is generated in the browser. */
+  var Music=(function(){
+    var ctx,master,bus,timer,next=0,idx=0,audio=null,playing=false,btn=$('#music');
+    var F=function(m){return 440*Math.pow(2,(m-69)/12)};
+    var CH=[{b:50,a:[62,66,69,74]},{b:45,a:[64,69,73,76]},{b:47,a:[62,66,71,74]},{b:42,a:[61,66,69,73]},{b:43,a:[62,67,71,74]},{b:50,a:[62,66,69,74]},{b:43,a:[62,67,71,74]},{b:45,a:[64,69,73,76]}];
+    var MEL=[78,76,74,73,71,69,71,73],ARP=[0,1,2,3,2,1,2,1];
+    function note(m,t,d,v,type){
+      [[1,1,type||'triangle'],[2,.22,'sine']].forEach(function(p){
+        var o=ctx.createOscillator(),g=ctx.createGain();o.type=p[2];o.frequency.value=F(m)*p[0];
+        g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v*p[1],t+.015);g.gain.exponentialRampToValueAtTime(.0001,t+d);
+        o.connect(g);g.connect(bus);o.start(t);o.stop(t+d+.05);
+      });
+    }
+    function chord(i,t){
+      var c=CH[i%8],second=(Math.floor(i/8)%2)===1;
+      for(var s=0;s<8;s++)note(c.a[ARP[s]],t+s*.4,1.7,.075);
+      note(c.b,t,3.2,.2,'sine');note(c.b+12,t+1.6,2,.05,'sine');
+      note(MEL[i%8],t,3,.1);
+      if(second)note(c.a[3]+(i%2?0:5),t+1.6,1.6,.07);
+    }
+    function sched(){while(next<ctx.currentTime+1.5){chord(idx++,next);next+=3.2}}
+    function synth(){
+      ctx=new (window.AudioContext||window.webkitAudioContext)();
+      master=ctx.createGain();master.gain.value=0;master.connect(ctx.destination);
+      bus=ctx.createGain();bus.connect(master);
+      var d=ctx.createDelay(1),fb=ctx.createGain(),lp=ctx.createBiquadFilter();
+      d.delayTime.value=.42;fb.gain.value=.38;lp.type='lowpass';lp.frequency.value=2400;
+      bus.connect(d);d.connect(lp);lp.connect(fb);fb.connect(d);lp.connect(master);
+      next=ctx.currentTime+.15;sched();timer=setInterval(sched,300);
+      master.gain.linearRampToValueAtTime(.85,ctx.currentTime+3);
+    }
+    function ui(on){btn.hidden=false;btn.classList.toggle('on',on);btn.setAttribute('aria-pressed',on)}
+    return{
+      start:function(){
+        playing=true;ui(true);
+        try{
+          var a=new Audio('audio/song.mp3');a.loop=true;a.volume=.6;
+          a.addEventListener('error',function(){if(!audio&&!ctx&&playing)synth()});
+          var p=a.play();
+          if(p&&p.then)p.then(function(){audio=a},function(){if(!ctx&&playing)synth()});
+        }catch(e){synth()}
+      },
+      toggle:function(){
+        if(playing){
+          playing=false;ui(false);
+          if(audio)audio.pause();
+          if(ctx){master.gain.cancelScheduledValues(ctx.currentTime);master.gain.setTargetAtTime(0,ctx.currentTime,.25);setTimeout(function(){if(!playing)ctx.suspend()},900)}
+        }else{
+          playing=true;ui(true);
+          if(audio)audio.play();
+          else if(ctx){ctx.resume();master.gain.setTargetAtTime(.85,ctx.currentTime,.4)}
+          else synth();
+        }
+      },
+      hide:function(h){if(!playing)return;if(audio){h?audio.pause():audio.play()}else if(ctx){h?ctx.suspend():ctx.resume()}},
+      show:function(){btn.hidden=false}
+    };
+  })();
+  $('#music').addEventListener('click',Music.toggle);
+  document.addEventListener('visibilitychange',function(){Music.hide(document.hidden)});
+
+
+  /* ---------- countdown with roll animation ---------- */
+  (function(){
+    var t=new Date(CONFIG.start.replace(/^(\d{4})(\d\d)(\d\d)T(\d\d)(\d\d)(\d\d)$/,'$1-$2-$3T$4:$5:$6+05:30')).getTime();
+    var cdEl=$('#count'), dEl=$('#cd-d'), hEl=$('#cd-h'), mEl=$('#cd-m'), sEl=$('#cd-s');
+    var rolled=false;
+
+    function tick(){
+      var diff=Math.max(0,t-Date.now())/1000;
+      dEl.textContent=Math.floor(diff/86400);
+      hEl.textContent=Math.floor(diff%86400/3600);
+      mEl.textContent=Math.floor(diff%3600/60);
+      sEl.textContent=Math.floor(diff%60);
+    }
+
+    function roll(){
+      if(rolled) return;
+      rolled=true;
+      var diff=Math.max(0,t-Date.now())/1000;
+      var td=Math.floor(diff/86400), th=Math.floor(diff%86400/3600), tm=Math.floor(diff%3600/60), ts=Math.floor(diff%60);
+      var start=Date.now(), dur=1500;
+      function anim(){
+        var p=Math.min(1,(Date.now()-start)/dur);
+        var ease=1-Math.pow(1-p,3);
+        dEl.textContent=Math.floor(td*ease);
+        hEl.textContent=Math.floor(th*ease);
+        mEl.textContent=Math.floor(tm*ease);
+        sEl.textContent=Math.floor(ts*ease);
+        if(p<1){requestAnimationFrame(anim)}
+        else{tick();setInterval(tick,1000)}
+      }
+      requestAnimationFrame(anim);
+    }
+
+    if('IntersectionObserver' in window && cdEl){
+      new IntersectionObserver(function(es,obs){
+        if(es[0].isIntersecting){roll();obs.disconnect()}
+      },{threshold:.2}).observe(cdEl);
+    }else{
+      tick();setInterval(tick,1000);
+    }
+  })();
+
+  /* ---------- interactive timeline with traveling rose ---------- */
+  (function(){
+    var container=$('.timeline-container'), rose=$('#timeline-rose');
+    if(!container||!rose) return;
+    var events=$$('.t-event',container);
+    if(!events.length) return;
+
+    function updateRose(targetEvent){
+      if(!targetEvent) return;
+      events.forEach(function(ev){ev.classList.remove('active')});
+      targetEvent.classList.add('active');
+      var cRect=container.getBoundingClientRect();
+      var node=targetEvent.querySelector('.t-node')||targetEvent;
+      var nRect=node.getBoundingClientRect();
+      var topPos=(nRect.top-cRect.top)+(nRect.height/2)-(rose.offsetHeight/2);
+      rose.style.transform='translate(-50%,'+topPos+'px)';
+    }
+
+    events.forEach(function(ev){
+      ev.addEventListener('click',function(){updateRose(ev)});
+    });
+
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting && entry.intersectionRatio >= 0.3){
+            updateRose(entry.target);
+          }
+        });
+      },{threshold:[0.3, 0.6]});
+      events.forEach(function(ev){io.observe(ev)});
+    }
+
+    setTimeout(function(){updateRose(events[0])},500);
+    window.addEventListener('resize',function(){
+      var active=$('.t-event.active',container)||events[0];
+      updateRose(active);
+    });
+  })();
+
+  /* ---------- gallery & lightbox ---------- */
+  (function(){
+    var g=$('#gal'),sec=$('#gallery'),n=0;
+    var lb=$('#lightbox'),lbImg=$('#lb-img');
+    var titles=[
+      'Traditional Muhurtham',
+      'Royal Sangeet Night',
+      'Festive Haldi & Mehendi',
+      'Coimbatore Hills',
+      'The Engagement Walk',
+      'Grand Reception Royalty'
+    ];
+
+    function closeLb(){if(lb){lb.hidden=true;document.documentElement.classList.remove('modal')}}
+    if($('#lb-x')) $('#lb-x').addEventListener('click',closeLb);
+    if(lb){
+      lb.addEventListener('click',function(e){if(e.target===lb)closeLb()});
+      document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)closeLb()});
+    }
+
+    for(var i=1;i<=6;i++)(function(i){
+      var card=document.createElement('div');
+      card.className='gal-card rv';
+      card.style.setProperty('--d',(i*0.08)+'s');
+
+      var thumb=document.createElement('div');
+      thumb.className='gal-thumb';
+
+      var im=new Image();
+      im.alt=titles[i-1];
+      im.src='img/gallery/'+i+'.jpg?v=3';
+
+      var glow=document.createElement('div');
+      glow.className='gal-glow';
+
+      var zBadge=document.createElement('div');
+      zBadge.className='gal-zoom-badge';
+      zBadge.innerHTML='<span>✦ View ✦</span>';
+
+      var tBadge=document.createElement('div');
+      tBadge.className='gal-badge';
+      tBadge.innerHTML='<span>'+titles[i-1]+'</span>';
+
+      thumb.appendChild(im);
+      thumb.appendChild(glow);
+      thumb.appendChild(zBadge);
+      card.appendChild(thumb);
+      card.appendChild(tBadge);
+
+      card.addEventListener('click',function(){
+        if(lb&&lbImg){
+          lbImg.src=im.src;
+          lb.hidden=false;
+          document.documentElement.classList.add('modal');
+        }
+      });
+
+      im.onload=function(){
+        g.appendChild(card);
+        sec.hidden=false;
+        n++;
+        if(window.observeReveal) window.observeReveal(card);
+      };
+    })(i);
+  })();
+
+  /* ---------- floating gold dust ---------- */
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+  $$('canvas.dust').forEach(function(c){
+    var x=c.getContext('2d'),P=[],vis=false,W=0,H=0,dark=c.classList.contains('dark'),N=window.innerWidth<720?22:38;
+    function size(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight}
+    function mk(){return{x:Math.random()*W,y:Math.random()*H,r:.6+Math.random()*1.7,v:.12+Math.random()*.35,s:Math.random()*6.28,k:.4+Math.random()*1.2}}
+    size();for(var i=0;i<N;i++)P.push(mk());
+    function frame(){
+      if(!vis)return;x.clearRect(0,0,W,H);
+      P.forEach(function(p){p.y-=p.v;p.x+=Math.sin(p.s+=.01*p.k)*.3;if(p.y<-5){p.y=H+5;p.x=Math.random()*W}
+        var a=.25+.55*Math.abs(Math.sin(p.s*1.7));x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);
+        x.fillStyle=(dark?'rgba(176,134,58,':'rgba(236,208,140,')+a+')';x.shadowColor=dark?'rgba(176,134,58,.6)':'rgba(236,208,140,.9)';x.shadowBlur=6;x.fill()});
+      requestAnimationFrame(frame);
+    }
+    new IntersectionObserver(function(es){var v=es[0].isIntersecting;if(v&&!vis&&!reduce){vis=true;frame()}else if(!v)vis=false;if(reduce&&v){size();frame()}}).observe(c);
+    window.addEventListener('resize',size);
+  });
+
+  /* ---------- celebratory gold petal shower ---------- */
+  function celebrateShower(){
+    var c=document.createElement('canvas');
+    c.style.cssText='position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:180;';
+    document.body.appendChild(c);
+    var ctx=c.getContext('2d'), W=c.width=window.innerWidth, H=c.height=window.innerHeight;
+    var P=[];
+    var colors=['#e6c87f','#c9a45c','#f3dca6','#d89585','#d4af37','#f7e6c4'];
+    for(var i=0;i<48;i++){
+      P.push({
+        x:Math.random()*W,
+        y:-10-Math.random()*H*0.4,
+        w:4+Math.random()*8,
+        h:3+Math.random()*6,
+        r:Math.random()*6.28,
+        vr:0.02+Math.random()*0.05,
+        vx:(Math.random()-.5)*1.6,
+        vy:1.8+Math.random()*2.2,
+        c:colors[Math.floor(Math.random()*colors.length)],
+        alpha:0.85+Math.random()*0.15
+      });
+    }
+    var start=Date.now(), dur=3400;
+    function loop(){
+      var elapsed=Date.now()-start;
+      if(elapsed>dur){c.remove();return;}
+      ctx.clearRect(0,0,W,H);
+      var fade=elapsed>dur-800?(dur-elapsed)/800:1;
+      P.forEach(function(p){
+        p.y+=p.vy;
+        p.x+=p.vx+Math.sin(p.y*0.015)*.8;
+        p.r+=p.vr;
+        ctx.save();
+        ctx.translate(p.x,p.y);
+        ctx.rotate(p.r);
+        ctx.fillStyle=p.c;
+        ctx.globalAlpha=p.alpha*fade;
+        ctx.beginPath();
+        ctx.ellipse(0,0,p.w,p.h,0,0,Math.PI*2);
+        ctx.fill();
+        ctx.restore();
+      });
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+  }
+
+  /* ---------- loader, entry, reveal ---------- */
+  var loader=$('#loader'),openBtn=$('#open'),opened=false,start=Date.now(),MIN=1800;
+  var globalIo=null;
+  function reveal(){
+    var els=$$('.rv,.fd');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+    globalIo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');globalIo.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(e){globalIo.observe(e)});
+  }
+  window.observeReveal=function(el){
+    if(globalIo) globalIo.observe(el);
+    else if(!('IntersectionObserver' in window)) el.classList.add('in');
+  };
+  function enter(withMusic){
+    if(opened)return;opened=true;
+    if(withMusic){Music.start();celebrateShower()}else Music.show();
+    loader.classList.add('gone');document.body.classList.remove('lock');setTimeout(reveal,250);
+    setTimeout(function(){
+      loader.style.display='none';
+      window.dispatchEvent(new Event('resize'));
+    },1000);
+  }
+  if(/[?&]nol/.test(location.search)){enter(false);return}
+  openBtn.addEventListener('click',function(){enter(true)});
+  var imgs=['img/hero-desktop.jpg','img/hero-mobile.jpg','img/couple.jpg','img/groom.jpg','img/bride.jpg','img/town-desktop.png','img/town-mobile.png'],left=imgs.length,ready=false;
+  function showBtn(){if(ready)return;ready=true;loader.classList.add('ready');openBtn.hidden=false;openBtn.focus({preventScroll:true})}
+  function done(){if(--left<=0)setTimeout(showBtn,Math.max(0,MIN-(Date.now()-start)))}
+  imgs.forEach(function(s){var i=new Image();i.onload=i.onerror=done;i.src=s});
+  setTimeout(showBtn,7000);
+})();
+</script>
+</body>
+</html>
